@@ -6,7 +6,7 @@ import numpy as np
 
 
 
-image = img_as_float(imread('blood.jpg'))
+image = img_as_float(imread('../images/blood.jpg'))
 #kernels
 mean_kernel = (1/9) * np.array([[1, 1, 1],
                                 [1, 1, 1],

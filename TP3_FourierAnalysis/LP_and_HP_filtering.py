@@ -3,7 +3,7 @@ from skimage.io import imread
 from skimage.util import img_as_float
 import numpy as np
 
-image = img_as_float(imread('cornee.png', as_gray=True))
+image = img_as_float(imread('../images/cornee.png', as_gray=True))
 fft = np.fft.fft2(image)
 fft_shift = np.fft.fftshift(fft)
 

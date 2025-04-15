@@ -5,7 +5,7 @@ from scipy.signal import convolve2d
 import numpy as np
 
 # Load and normalize image
-image = img_as_float(imread('osteoblaste.jpg', as_gray=True))
+image = img_as_float(imread('../images/osteoblaste.jpg', as_gray=True))
 
 # Laplacian kernel
 laplacian_kernel = np.array([[-1, -1, -1],

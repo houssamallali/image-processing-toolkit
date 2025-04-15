@@ -5,7 +5,7 @@ from skimage.filters.rank import mean
 from skimage.morphology import footprint_rectangle
 from skimage.util import img_as_float
 
-image = img_as_float(imread('blood.jpg'))
+image = img_as_float(imread('../images/blood.jpg'))
 
 
 mean_25 = mean(image, footprint_rectangle((5, 5)))

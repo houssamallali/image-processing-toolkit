@@ -5,7 +5,7 @@ from skimage.filters import gaussian
 import numpy as np
 
 
-cornea = img_as_float(imread('cornee.png', as_gray=True))
+cornea = img_as_float(imread('../images/cornee.png', as_gray=True))
 
 # La transforme de fourier
 fft = np.fft.fft2(cornea)

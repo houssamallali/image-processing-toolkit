@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 # ===========================
 # Chargement de l'image couleur
 # ===========================
-cells = imageio.imread('Tv16.png')
+cells = imageio.imread('../images/Tv16.png')
 nLines, nCols, channels = cells.shape
 
 # ===========================
