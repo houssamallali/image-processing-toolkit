@@ -26,6 +26,13 @@ This repository contains a collection of image processing scripts organized by t
   - `otsu_segmentation.py`: Otsu thresholding (demonstration with generated points)
   - `advanced_segmentation.py`: Advanced K-means segmentation on color images
 
+- **TP5_Enhancement**: Image enhancement methods
+  - `gamma_correction.py`: Gamma adjustment with different gamma values
+  - `contrast_stretching.py`: Contrast enhancement with s = 1/(1+(m/r)^E) transformation
+  - `histogram_enhancement.py`: Histogram equalization techniques
+  - `lut_transformations.py`: Visualizing Look-Up Table transformations
+  - `combined_enhancement.py`: Applying multiple enhancement techniques in sequence
+
 - **images**: Contains all image resources used by the scripts
 
 - **plots**: Contains all generated visualizations
@@ -33,6 +40,7 @@ This repository contains a collection of image processing scripts organized by t
   - `TP2_Filtering/`: Plots showing various filtering techniques
   - `TP3_FourierAnalysis/`: Plots of Fourier transforms and filtering
   - `TP4_Segmentation/`: Plots of image segmentation results
+  - `TP5_Enhancement/`: Plots demonstrating image enhancement methods
 
 - **docs**: Documentation and reference materials
   - `python_image_processing_tutorials.pdf`: Comprehensive Python tutorials for image processing
