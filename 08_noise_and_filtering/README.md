@@ -1,43 +1,22 @@
-# TP8: Image Processing - Random Noise Generation
+# TP8 : Bruit aléatoire
 
-This practical work focuses on generating, visualizing, and analyzing different types of random noise commonly found in images:
+Ce module génère différents types de bruit pour tester les algorithmes de filtrage.
 
-1. **Uniform Noise**
-   - Generated using a uniform distribution
-   - Values distributed evenly between two bounds
+Types de bruit :
+1. **Uniforme** : valeurs réparties uniformément.
+2. **Gaussien** : distribution normale autour d'une moyenne.
+3. **Poivre et sel** : pixels noirs ou blancs aléatoires.
+4. **Exponentiel** : modélise certains phénomènes de décroissance.
 
-2. **Gaussian Noise**
-   - Generated using a normal distribution
-   - Bell-shaped distribution around a mean value
+## Script
 
-3. **Salt and Pepper Noise**
-   - Random black and white pixels
-   - Models sudden intensity spikes and dead pixels
+- `random_noise.py` : création et visualisation des bruits précédents.
 
-4. **Exponential Noise**
-   - Generated using an exponential distribution
-   - Models decay processes in imaging
-
-## Files
-
-- `random_noise.py`: Implementation and visualization of random noise types
-
-## Usage
-
-Run the script to generate noise images and their histograms:
+## Lancer le script
 
 ```bash
 python TP8_Compression/random_noise.py
 ```
 
-## Output
+Les images et histogrammes sont enregistrés dans `plots/TP8_Compression/`.
 
-Results will be saved in the `plots/TP8_Compression/` directory, including:
-- `random_noise_types.png`: Visualization of the four noise types
-- `random_noise_histograms.png`: Histograms showing the distribution of each noise type
-
-## Visualization
-
-The script displays:
-1. The generated noise images in grayscale
-2. The histograms of each noise type showing their probability distributions 
