@@ -4,6 +4,17 @@ import sys
 import importlib.util
 import argparse
 
+
+def available_tp_numbers():
+    """Return sorted TP numbers found in the project."""
+    numbers = []
+    for d in os.listdir():
+        if d.startswith('TP') and '_' in d:
+            num = d[2:d.index('_')]
+            if num.isdigit():
+                numbers.append(int(num))
+    return sorted(numbers)
+
 def import_script(script_path):
     """Import a Python script as a module."""
     script_name = os.path.basename(script_path).replace('.py', '')
@@ -13,8 +24,8 @@ def import_script(script_path):
     return module
 
 def list_scripts():
-    """List all available scripts in the project."""
-    script_dirs = ['TP1_Basics', 'TP2_Filtering', 'TP3_FourierAnalysis', 'TP4_Segmentation']
+    """List all available TP scripts dynamically."""
+    script_dirs = [d for d in os.listdir() if d.startswith('TP') and os.path.isdir(d)]
     all_scripts = {}
     
     for dir_name in script_dirs:
@@ -103,7 +114,7 @@ def run_script(script_path, save_plots=False):
 def run_all_in_tp(tp_number, save_plots=False):
     """Run all scripts in a specific TP directory."""
     tp_dir = f"TP{tp_number}_"
-    
+
     # Determine the full directory name
     full_dir = None
     for dirname in os.listdir():
@@ -128,7 +139,8 @@ def main():
     parser.add_argument('script', nargs='?', help='Path to the script to run')
     parser.add_argument('--list', action='store_true', help='List all available scripts')
     parser.add_argument('--save-plots', action='store_true', help='Save plots to files in addition to displaying them')
-    parser.add_argument('--all-tp', type=int, choices=[1, 2, 3, 4], help='Run all scripts in the specified TP number')
+    parser.add_argument('--all-tp', type=int, choices=available_tp_numbers(),
+                        help='Run all scripts in the specified TP number')
     
     args = parser.parse_args()
     
