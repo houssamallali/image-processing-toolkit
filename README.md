@@ -32,6 +32,24 @@ This repository contains a collection of image processing scripts organized by t
   - `histogram_enhancement.py`: Histogram equalization techniques
   - `lut_transformations.py`: Visualizing Look-Up Table transformations
   - `combined_enhancement.py`: Applying multiple enhancement techniques in sequence
+  - `phobos_synthetic.py`: Creating synthetic Mars moon Phobos image with craters and grooves
+
+- **TP6_Restoration**: Image restoration techniques
+  - `image_restoration.py`: Inverse and Wiener filtering for image restoration
+  - `create_motion_psf.py`: Generation of motion blur point spread functions
+  - `astronomy_restoration.py`: Restoration of astronomical (Jupiter and Saturn) images
+  - `create_sample_astronomy.py`: Generation of synthetic astronomical images with PSFs
+  - `iterative_restoration.py`: Implementation of iterative deconvolution algorithms (Richardson-Lucy, Van-Cittert, Landweber)
+
+- **TP7_Registration**: Image registration algorithms
+  - Implementation of image registration algorithms including ICP and manual point selection
+
+- **TP8_Compression**: Image compression techniques
+  - Implementation of various compression algorithms
+
+- **TP9_Follicle_Segmentation**: Segmentation of ovarian follicles in histological images
+  - `follicle_segmentation.py`: Functions for segmenting and analyzing follicle components
+  - `main.py`: Main script for executing the follicle segmentation pipeline
 
 - **images**: Contains all image resources used by the scripts
 
@@ -41,6 +59,10 @@ This repository contains a collection of image processing scripts organized by t
   - `TP3_FourierAnalysis/`: Plots of Fourier transforms and filtering
   - `TP4_Segmentation/`: Plots of image segmentation results
   - `TP5_Enhancement/`: Plots demonstrating image enhancement methods
+  - `TP6_Restoration/`: Plots showing image restoration techniques and PSFs
+  - `TP7_Registration/`: Plots of image registration results
+  - `TP8_Compression/`: Plots showing compression techniques and results
+  - `TP9_Follicle_Segmentation/`: Plots of follicle segmentation and analysis
 
 - **docs**: Documentation and reference materials
   - `python_image_processing_tutorials.pdf`: Comprehensive Python tutorials for image processing
@@ -59,8 +81,8 @@ python run.py TP2_Filtering/lowpass.py
 # Run a script and save the generated plots to the 'plots' directory
 python run.py TP3_FourierAnalysis/inversefourier.py --save-plots
 
-# Run all scripts in a specific TP module (e.g., TP2)
-python run.py --all-tp 2
+# Run all scripts in a specific TP module (e.g., TP9)
+python run.py --all-tp 9
 ```
 
 Saved plots will be stored in the `plots` directory, organized into subdirectories corresponding to the TP module.
@@ -92,6 +114,12 @@ All dependencies are listed in the `requirements.txt` file. Install them using:
 pip install -r requirements.txt
 ```
 
+If you prefer not to use a virtual environment, you can install the main libraries globally:
+
+```bash
+pip install opencv-python
+```
+
 Main dependencies:
 - NumPy
 - Matplotlib
@@ -99,3 +127,4 @@ Main dependencies:
 - SciPy
 - scikit-learn (for K-means)
 - imageio (for some image loading/saving)
+- OpenCV (cv2) via `pip install opencv-python`

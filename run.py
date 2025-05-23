@@ -14,7 +14,9 @@ def import_script(script_path):
 
 def list_scripts():
     """List all available scripts in the project."""
-    script_dirs = ['TP1_Basics', 'TP2_Filtering', 'TP3_FourierAnalysis', 'TP4_Segmentation']
+    script_dirs = ['TP1_Basics', 'TP2_Filtering', 'TP3_FourierAnalysis', 'TP4_Segmentation', 
+                   'TP5_Enhancement', 'TP6_Restoration', 'TP7_Registration', 'TP8_Compression',
+                   'TP9_Follicle_Segmentation']
     all_scripts = {}
     
     for dir_name in script_dirs:
@@ -42,7 +44,7 @@ def print_available_scripts():
     print("  python run.py --list")
     print("  python run.py TP2_Filtering/lowpass.py")
     print("  python run.py TP3_FourierAnalysis/inversefourier.py --save-plots")
-    print("  python run.py --all-tp 2")
+    print("  python run.py --all-tp 9")
 
 def run_script(script_path, save_plots=False):
     """Run a specific script and handle plot saving if requested."""
@@ -128,7 +130,7 @@ def main():
     parser.add_argument('script', nargs='?', help='Path to the script to run')
     parser.add_argument('--list', action='store_true', help='List all available scripts')
     parser.add_argument('--save-plots', action='store_true', help='Save plots to files in addition to displaying them')
-    parser.add_argument('--all-tp', type=int, choices=[1, 2, 3, 4], help='Run all scripts in the specified TP number')
+    parser.add_argument('--all-tp', type=int, choices=range(1, 10), help='Run all scripts in the specified TP number')
     
     args = parser.parse_args()
     
