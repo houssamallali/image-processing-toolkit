@@ -13,6 +13,8 @@ Combinaison de seuillage et de morphologie mathématique :
 - Dilatation binaire pour isoler la thèque.
 - Recherche de zones sombres pour la vascularisation.
 - Calcul des surfaces et proportions des différentes régions.
+La segmentation medicale repose sur une modelisation anatomique et sur des operateurs morphologiques destines a isoler des structures coherentes. Ces traitements exploitent la connaissance des intensites propres aux tissus pour guider le seuillage et le post-traitement des regions obtenues.
+
 
 ## Fichiers
 

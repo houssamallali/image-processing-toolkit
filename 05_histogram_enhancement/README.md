@@ -7,6 +7,8 @@ Ce dossier présente plusieurs transformations d'intensité : correction gamma, 
 - **LUT (Look-Up Table)** : transformation pixel par pixel.
 - **Égalisation d'histogramme** : redistribution des niveaux de gris pour augmenter le contraste.
 - **Matching d'histogramme** : adaptation à l'histogramme d'une image de référence.
+Ces techniques modifient la distribution des niveaux de gris afin d'etendre la dynamique de l'image. L'egalisation s'appuie sur la theorie des probabilites pour uniformiser l'histogramme, tandis que le matching transfere la distribution d'une image de reference vers celle traitee.
+
 
 ## Scripts
 

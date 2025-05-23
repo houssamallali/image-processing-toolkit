@@ -44,6 +44,10 @@ imsave('output.jpg', image, quality=50)  # qualité réduite
 - Analyse d'image élémentaire
 - Conversion et optimisation de formats
 
+## Contexte theorique
+
+Une image numerique se definit comme une fonction discrete decrite par une matrice de valeurs. Les operations elementaires manipulent ces valeurs en modifiant l'espace de couleur ou leur distribution. Les conversions de format et la compression utilisent cette representation pour reduire la taille des fichiers tout en preservant l'information visuelle.
+
 ## Ressources utiles
 
 - [Documentation scikit-image](https://scikit-image.org/docs/stable/)

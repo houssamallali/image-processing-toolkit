@@ -9,6 +9,8 @@ Une image dégradée peut s'écrire :
 g = h * f + n
 ```
 avec `h` la fonction d'étalement (PSF) et `n` le bruit ajouté.
+Ce modele provient de la theorie des systemes lineaires ou l'acquisition est assimilee a la convolution de l'image originale par une PSF. La restauration tente d'inverser ce processus en tenant compte du bruit pour retrouver l'image la plus proche possible de la verite terrain.
+
 
 ## Méthodes de restauration
 

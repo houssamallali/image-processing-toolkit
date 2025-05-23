@@ -1,6 +1,10 @@
 # Projet de Traitement d'Images
 
 Ce dépôt regroupe une série de scripts Python couvrant de nombreuses thématiques du traitement d'images. Chaque dossier `TPx` correspond à un thème de travaux pratiques.
+## Bases theoriques
+
+Le traitement d'images s'appuie sur la representation matricielle des pixels. Les filtrages spatiaux manipulent cette matrice via la convolution avec un noyau. L'analyse de Fourier permet de travailler dans le domaine frequentiel pour isoler les basses et hautes frequences. La segmentation repose sur des criteres d'intensite ou de texture pour regrouper les pixels en regions homogenes. Enfin la restauration modele la degradation comme une convolution avec une PSF suivie d'un bruit et applique des filtres inverses ou regularises pour recuperer l'image d'origine.
+
 
 ## Organisation du projet
 

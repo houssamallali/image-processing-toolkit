@@ -9,6 +9,8 @@ La segmentation découpe une image en régions cohérentes pour en faciliter l'a
 - **Clustering** : regroupement de pixels similaires (ex. K-means).
 - **Croissance de région** : expansion à partir de points de départ.
 - **Watershed** : approche basée sur la topographie.
+La segmentation traduit generalement une modelisation de l'image par regions homogenes selon l'intensite, la texture ou la forme. Elle utilise des approches deterministes comme le seuillage, ainsi que des methodes statistiques ou d'optimisation pour regrouper les pixels partageant des caracteristiques communes.
+
 
 ## Fichiers principaux
 
