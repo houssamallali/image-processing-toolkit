@@ -86,10 +86,10 @@ image = imread('../images/example.jpg')
 
 ## Dependencies
 
-All dependencies are listed in the `requirements.txt` file. Install them using:
+All dependencies are listed in the `requirements.txt` file. You can install them manually or run the provided `setup.sh` script:
 
 ```bash
-pip install -r requirements.txt
+./setup.sh
 ```
 
 Main dependencies:
