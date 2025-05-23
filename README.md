@@ -33,6 +33,9 @@ This repository contains a collection of image processing scripts organized by t
   - `lut_transformations.py`: Visualizing Look-Up Table transformations
   - `combined_enhancement.py`: Applying multiple enhancement techniques in sequence
 
+- **TP12_ImageClassification**: Kimia 216 image classification example
+  - `kimia_classification.py`: Extract geometric features and train an MLP classifier
+
 - **images**: Contains all image resources used by the scripts
 
 - **plots**: Contains all generated visualizations
@@ -90,6 +93,8 @@ All dependencies are listed in the `requirements.txt` file. Install them using:
 
 ```bash
 pip install -r requirements.txt
+# or use the convenience script
+./setup.sh
 ```
 
 Main dependencies:
@@ -99,3 +104,14 @@ Main dependencies:
 - SciPy
 - scikit-learn (for K-means)
 - imageio (for some image loading/saving)
+- Flask (for the web interface)
+
+## Running the Web Application
+
+Launch the Flask-based interface to browse and execute TP scripts:
+
+```bash
+python webapp/app.py
+```
+
+Generated plots are saved in the `plots` directory and displayed in the browser.
