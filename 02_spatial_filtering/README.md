@@ -9,6 +9,8 @@ La convolution consiste à combiner l'image avec un noyau pour produire un résu
 ```
 g(x,y) = \sum_i \sum_j f(i,j)\,h(x-i, y-j)
 ```
+Cette operation correspond a une integration discrete ou chaque coefficient du noyau pondere l'intensite des pixels voisins. La conception des filtres (moyenne, gaussien, Laplacien...) provient de la theorie du traitement du signal et permet de selectionner ou de supprimer certaines composantes frequentielles.
+
 
 - `f` : image d'entrée
 - `h` : noyau

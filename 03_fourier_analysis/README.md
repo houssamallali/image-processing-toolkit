@@ -7,6 +7,8 @@ Ce module traite l'image dans le domaine fréquentiel grâce à la transformée 
 - **Transformée de Fourier** : décompose l'image en composantes de fréquences.
 - **Domaine fréquentiel** : représentation en fréquence plutôt qu'en pixels.
 - **Amplitude et phase** : informations essentielles de la TFD.
+La TFD transforme la fonction image en somme de sinusoides de differentes frequences. Les hautes frequences traduisent des variations rapides tandis que les basses frequences decrivent les structures globales. Manipuler ce spectre permet de filtrer ou de compresser l'information plus efficacement que dans le domaine spatial.
+
 
 ## Scripts
 

@@ -8,6 +8,8 @@ Ce TP illustre l'utilisation de techniques d'apprentissage automatique pour reco
 2. **Prétraitement** : normalisation des données et séparation entraînement/test.
 3. **Algorithmes** : SVM à noyau RBF, perceptron multicouche, forêts aléatoires et K plus proches voisins.
 4. **Évaluation** : matrice de confusion et taux de réussite pour comparer les méthodes.
+La reconnaissance de formes repose sur l'extraction de descripteurs invariants caracterisant la geometrie des objets. Ces vecteurs servent ensuite a entrainer des classifieurs supervises fondees sur la theorie statistique de la decision.
+
 
 Les scripts fournissent également des visualisations et un classement des caractéristiques les plus discriminantes.
 

@@ -6,6 +6,8 @@ Ce TP met en œuvre l'algorithme ICP (Iterative Closest Point) ainsi qu'une sél
 
 On cherche la rotation `R` et la translation `t` qui minimisent la distance quadratique entre les points correspondants :
 \[ C(R,t) = \sum_i \| q_i - (R p_i + t) \|^2 \]
+L'alignement d'images est un probleme d'optimisation non lineaire ou l'on cherche la transformation geometrique qui superpose au mieux deux ensembles de points ou d'intensites. L'algorithme ICP procède par estimations successives des correspondances et de la transformation jusqu'a convergence.
+
 
 ## Scripts
 
