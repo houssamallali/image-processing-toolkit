@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Processing Toolkit</title>
+</head>
+<body>
+  <h1>Available Scripts</h1>
+  {% for tp, files in scripts.items() %}
+  <h2>{{ tp }}</h2>
+  <ul>
+    {% for file in files %}
+    <li><a href="{{ url_for('run_script', tp=tp, script=file) }}">{{ file }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</body>
+</html>

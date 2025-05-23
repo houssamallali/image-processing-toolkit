@@ -99,3 +99,18 @@ Main dependencies:
 - SciPy
 - scikit-learn (for K-means)
 - imageio (for some image loading/saving)
+
+## Web Application
+
+An optional Flask web interface is provided in the `webapp` directory. It lists
+all available TP scripts and lets you run them from the browser. Generated
+plots are displayed directly in the page.
+
+Run the server with:
+
+```bash
+python webapp/app.py
+```
+
+Then open `http://localhost:5000/` in your browser.
+
